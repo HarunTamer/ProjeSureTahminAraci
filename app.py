@@ -82,8 +82,8 @@ st.markdown("""
 # ------------------------------------------------------------------
 @st.cache_resource
 def yukle():
-    basit = joblib.load("models/sure_modeli_basit.pkl1")
-    gelismis = joblib.load("models/sure_modeli_gelismis1.pkl")
+    basit = joblib.load("models/sure_modeli_basit.pkl")
+    gelismis = joblib.load("models/sure_modeli_gelismis.pk")
     with open("models/meta.json", encoding="utf-8") as f:
         meta = json.load(f)
     return basit, gelismis, meta
